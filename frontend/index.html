@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raju AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="avatar">R</div>
+        <div>
+          <h1>Raju</h1>
+          <span>AI Assistant</span>
+        </div>
+      </div>
+      <div class="sidebar-info">
+        <div class="status-dot"></div>
+        <p>Online & Ready</p>
+      </div>
+      <div class="tips">
+        <p>💡 Ask me anything!</p>
+        <p>📝 I can write, explain, code...</p>
+        <p>😄 I even crack jokes!</p>
+      </div>
+    </aside>
+
+    <!-- Main Chat -->
+    <main class="chat-area">
+      <div class="chat-header">
+        <span>Chat with Raju</span>
+      </div>
+
+      <div class="chat-messages" id="chat">
+        <!-- Welcome message -->
+        <div class="message bot-message">
+          <div class="bubble">
+            👋 Hey there! I'm <strong>Raju</strong>, your AI assistant. What can I help you with today?
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-input-area">
+        <input
+          id="input"
+          type="text"
+          placeholder="Ask Raju something..."
+          onkeydown="if(event.key==='Enter') sendMessage()"
+          autocomplete="off"
+        />
+        <button onclick="sendMessage()" id="send-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
