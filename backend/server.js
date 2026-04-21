@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: ["https://your-site.netlify.app", "http://localhost:5500", "http://127.0.0.1:5500", "null"],
+  origin: ["https://tranquil-ganache-49a136.netlify.app", "http://localhost:5500", "http://127.0.0.1:5500", "null"],
   methods: ["GET", "POST"]
 }));
 app.use(express.json());
