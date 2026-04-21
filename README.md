@@ -1,4 +1,4 @@
-# 🤖 Raju A
+# 🤖 Raju Ai
 
 A full-stack AI chatbot named **Raju** — built with Node.js + Express on the backend and vanilla HTML/CSS/JS on the frontend, powered by **Groq's free LLaMA 3.3 70B model**.
 
