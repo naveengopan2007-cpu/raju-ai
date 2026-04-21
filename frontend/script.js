@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3001/chat";
+const API_URL = "https://raju-ai-production.up.railway.app/chat";
 
 async function sendMessage() {
   const input = document.getElementById("input");
